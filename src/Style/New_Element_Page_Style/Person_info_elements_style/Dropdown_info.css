@@ -1,0 +1,16 @@
+.person_info_dropDowns{
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 4.5rem;
+}
+
+.person_info_dropDowns div input{
+    width: 100%;
+    font-size: 18px;
+    margin: 10px 0px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(206, 205, 205);
+    padding: .2rem .5rem;
+}

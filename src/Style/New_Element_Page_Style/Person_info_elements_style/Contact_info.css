@@ -1,0 +1,45 @@
+.contact_info{
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 4.5rem;
+}
+
+.contact_info div{
+    margin: 5px 0px 15px 0px;
+}
+
+.contact_info div .header{
+    font-size: 20px;
+}
+.contact_info div .info{
+    font-size: 15px;
+}
+.contact_info div input{
+    width: 100%;
+    margin: 10px 0px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: .2rem .5rem;
+    border-bottom: 1px solid rgb(206, 205, 205);
+}
+
+.contact_info div .valid_num{
+    border-bottom: 1px solid green;
+}
+
+.contact_info div .invalid_num{
+    border-bottom: 1px solid red;
+    color: red;
+}
+
+.contact_info div .valid_email{
+    border-bottom: 1px solid green;
+}
+
+.contact_info div .invalid_email{
+    border-bottom: 1px solid red;
+    color: red;
+}
+
+

@@ -1,0 +1,35 @@
+.mainIMG{
+    height: 300px;
+}
+
+.mainIMG img{
+    height: 100%;
+}
+
+.link_container{
+    display: flex;
+    flex-direction: column;
+}
+
+.link_container div{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.link_container div button{
+    padding: .5rem 1rem;
+    width: 300px;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(90deg, #0162c8, #55e7fc);
+    color: #fff;
+    border: none;
+    border-radius: .3rem;
+}
+
+.link_container div button:hover{
+    background: linear-gradient(90deg, #755bea, #ff72c0);
+}

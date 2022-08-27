@@ -1,0 +1,42 @@
+.person_info_top{
+    display: flex;
+    flex: 1;
+    margin: 20px 0px;
+    justify-content: space-around;
+}
+
+.person_info_top div .header{
+    font-size: 20px;
+}
+
+.person_info_top div .info{
+    font-size: 15px;
+}
+
+.person_info_top div input{
+    font-size: 18px;
+    margin: 10px 0px;
+    width: 270px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(206, 205, 205);
+    padding: .2rem .5rem;
+}
+
+.person_info_top div .valid_name{
+    border-bottom: 1px solid green;
+}
+
+.person_info_top div .invalid_name{
+    border-bottom: 1px solid red;
+    color: red;
+}
+
+.person_info_top div .valid_lastName{
+    border-bottom: 1px solid green;
+}
+
+.person_info_top div .invalid_lastName{
+    border-bottom: 1px solid red;
+    color: red;
+}
