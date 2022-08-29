@@ -1,0 +1,30 @@
+.laptop_img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.laptop_img #file{
+    font-size: 16px;
+    background: #fff;
+    border-radius: 50px;
+    width: 300px;
+    outline: 1px solid black;
+}
+::-webkit-file-upload-button{
+    font-size: 18px;
+    padding: 15px;
+    color: black;
+    background-color: #f5af09;
+    cursor: pointer;
+    transition: background-color .4s;
+    border: none;
+}
+
+::-webkit-file-upload-button:hover{
+    background-color: #edc66c;
+}
+

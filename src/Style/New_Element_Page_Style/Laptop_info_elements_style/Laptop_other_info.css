@@ -1,0 +1,40 @@
+.other_laptop_info{
+    margin-top: 15px;
+    border-top: 3px dashed rgb(223, 179, 5);
+}
+
+.other_laptop_info .purchase{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.other_laptop_info .purchase div p{
+    font-size: 20px;
+}
+
+.other_laptop_info .purchase div input{
+    font-size: 18px;
+    margin: 10px 0px;
+    width: 270px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(206, 205, 205);
+    padding: .2rem .5rem;
+}
+
+.other_laptop_info .condition{
+    margin-top: 20px;
+    display: flex;
+}
+
+.other_laptop_info .condition div{
+    display: flex;
+    margin-right: 30px;
+}
+
+.other_laptop_info .condition div label{
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}

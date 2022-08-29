@@ -1,28 +1,9 @@
 import React, { useState } from 'react';
 import '../../../Style/New_Element_Page_Style/Person_info_elements_style/Person_main_info.css'
 
-function Person_main_info({ formData, setFormData }) {
+function Person_main_info({ formData, setFormData, validName }) {
     const[nameLen, setNameLen] = useState('');
     const[lastNameLen, setLastNameLen] = useState('');
-
-    const validateGeorgian = (word) => {
-        let chars = 'აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰ' // მგონი ბოლოს სწორადაა... :/
-        let map = {};
-        // we use obj because it faster to find elements than in array.
-        for(let i of chars){
-            map[i] = true;
-        }
-
-        for(let i of word){
-            if(!map[i]) return false;
-        }
-        return true;
-    }
-
-    let validName = (name) => {
-        if(name.length < 2 || !validateGeorgian(name)) return false;
-        return true
-    }
 
   return (
     <div className='person_info_top'>

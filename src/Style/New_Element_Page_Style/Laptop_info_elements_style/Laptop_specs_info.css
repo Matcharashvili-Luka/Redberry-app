@@ -1,0 +1,63 @@
+.laptop_specs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    border-top: 3px dashed rgb(223, 179, 5);
+}
+
+.laptop_spect_upper_section{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.laptop_spect_upper_section div input{
+    font-size: 18px;
+    margin: 10px 0px;
+    width: 180px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(206, 205, 205);
+    padding: .2rem .5rem;
+}
+
+.laptop_spect_lower_section .ram_select input{
+    font-size: 18px;
+    margin: 10px 0px;
+    width: 270px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(206, 205, 205);
+    padding: .2rem .5rem;
+}
+
+.laptop_spect_upper_section div p,
+.laptop_spect_lower_section .ram_select p{
+    font-size: 20px;
+}
+
+.laptop_spect_lower_section{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.laptop_spect_lower_section .storage_slect,
+.laptop_spect_lower_section .storage_slect .ssd_storage,
+.laptop_spect_lower_section .storage_slect .hdd_storage{
+    display: flex;
+}
+
+.laptop_spect_lower_section .storage_slect .ssd_storage label,
+.laptop_spect_lower_section .storage_slect .hdd_storage label{
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.laptop_spect_lower_section div{
+    margin-right: 50px;
+}
+

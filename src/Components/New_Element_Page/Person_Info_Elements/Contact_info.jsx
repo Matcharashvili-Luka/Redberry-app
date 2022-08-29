@@ -1,39 +1,9 @@
 import React, { useState } from 'react';
 import '../../../Style/New_Element_Page_Style/Person_info_elements_style/Contact_info.css';
 
-function Contact_info({ formData, setFormData}) {
+function Contact_info({ formData, setFormData, emailValidation, mobileNumbervalidation}) {
     const[email, setEmail] = useState('');
     const[number, setNumber] = useState('');
-
-    const emailValidation = (email) => {
-        let idx = email.indexOf('@');
-        if(idx === -1) return false;
-        return email.slice(idx) === '@redberry.ge';
-    }
-
-    const mobileNumbervalidation = (number) => {
-        // we use obj because it faster to find elements than in array.
-        let map = { 
-            1: true,
-            2: true,
-            3: true,
-            4: true,
-            5: true,
-            6: true,
-            7: true,
-            8: true,
-            9: true,
-            0: true
-        }
-
-        number = number + '';
-        number = number.replaceAll(/ /g, '');
-        number = number.replace('+995', '');
-        for(let i of number){
-            if(!map[i]) return false;
-        }
-        return number.length === 9;
-    }
 
   return (
     <div className='contact_info'>

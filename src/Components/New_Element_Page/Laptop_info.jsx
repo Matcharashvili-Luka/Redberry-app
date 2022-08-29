@@ -1,29 +1,29 @@
-import React from 'react'
+import React from 'react';
+import '../../Style/New_Element_Page_Style/Laptop_info.css';
+import Laptop_brand_info from './Laptop_Info_Elements/Laptop_brand_info';
+import Laptop_other_info from './Laptop_Info_Elements/Laptop_other_info';
+import Laptop_pic from './Laptop_Info_Elements/Laptop_pic';
+import Laptop_specs_info from './Laptop_Info_Elements/Laptop_specs_info';
 
 function Laptop_info({ formData, setFormData }) {
   return (
-    <div>
-        {/* <div>
-            Laptop name:
-            <input 
-                required
-                type="text" 
-                value={formData.laptopName} 
-                onChange={(e) => setFormData({...formData, laptopName: e.target.value})}
-            />
-        </div> */}
-        <div className='laptop_img'>
-            <input type="image" />
-        </div>
-        <div className="laptop_brand_info">
-
-        </div>
-        <div className="laptop_specs">
-
-        </div>
-        <div className="other_laptop_info">
-
-        </div>
+    <div className='laptop_info_container'>
+      <Laptop_pic 
+        formData={formData}
+        setFormData={setFormData}
+      />
+      <Laptop_brand_info 
+        formData={formData}
+        setFormData={setFormData}
+      />
+      <Laptop_specs_info 
+        formData={formData}
+        setFormData={setFormData}
+      />
+      <Laptop_other_info 
+        formData={formData}
+        setFormData={setFormData}
+      />
     </div>
   )
 }

@@ -8,8 +8,8 @@ function Dropdown_info({ formData, setFormData}) {
             <input 
                 list='items' 
                 placeholder='თიმი'
-                required
                 value={formData.team} 
+                onClick={() => setFormData({...formData, team: ''})}
                 onChange={(e) => setFormData({...formData, team: e.target.value})}
             />
             <datalist id='items'>
@@ -24,7 +24,6 @@ function Dropdown_info({ formData, setFormData}) {
             <input 
                 list='items' 
                 placeholder='პოზიცია' 
-                required
                 value={formData.position} 
                 onChange={(e) => setFormData({...formData, position: e.target.value})}
             />

@@ -4,9 +4,9 @@ import Laptop_info from './Laptop_info';
 import Person_info from './Person_info';
 import '../../Style/New_Element_Page_Style/New_element_page.css';
 
-function New_element_Page({ formData, setFormData, onSubmit }) {
-  // to change pages between person and lap info.
-  const[page, setPage] = useState(0);
+function New_element_Page({ 
+  formData, setFormData, onSubmit, validName, emailValidation, mobileNumbervalidation, page, setPage 
+}) {
   // page headers
   const form_titles = ['თანამშრომლის ინფო', 'ლეპტოპის მახასიათებლები'];
 
@@ -17,6 +17,10 @@ function New_element_Page({ formData, setFormData, onSubmit }) {
         <Person_info 
           formData={formData} 
           setFormData={setFormData}
+
+          validName={validName}
+          emailValidation={emailValidation}
+          mobileNumbervalidation={mobileNumbervalidation}
         />
       )
     }else{
@@ -40,7 +44,7 @@ function New_element_Page({ formData, setFormData, onSubmit }) {
         </p>
         <div className='homeButton'>
           <Link to='/'>
-            <i class="fa-solid fa-house"></i>
+            <i className="fa-solid fa-house"></i>
           </Link>
         </div>
         <p 
@@ -66,7 +70,6 @@ function New_element_Page({ formData, setFormData, onSubmit }) {
             className={page === 1 ? 'desabled_next_btn' : 'enabled_next_btn'}
             onClick={() => {
               if(page === 1){
-                alert('ინფო დამახსოვრებულია');
                 onSubmit(formData);
               }else{
                 setPage((prevPage) => prevPage + 1);
