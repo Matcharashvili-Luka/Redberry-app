@@ -6,13 +6,13 @@ function Dropdown_info({ formData, setFormData}) {
     <div className='person_info_dropDowns'>
         <div className='person_info_team'>
             <input 
-                list='items' 
+                list='items_team' 
                 placeholder='თიმი'
                 value={formData.team} 
                 onClick={() => setFormData({...formData, team: ''})}
                 onChange={(e) => setFormData({...formData, team: e.target.value})}
             />
-            <datalist id='items'>
+            <datalist id='items_team'>
                 <option value="დეველოპმენტი" />
                 <option value="HR" />
                 <option value="გაყიდვები" />
@@ -22,12 +22,12 @@ function Dropdown_info({ formData, setFormData}) {
         </div>
         <div className='person_info_position'>
             <input 
-                list='items' 
+                list='items_position' 
                 placeholder='პოზიცია' 
                 value={formData.position} 
                 onChange={(e) => setFormData({...formData, position: e.target.value})}
             />
-            <datalist id='items'>
+            <datalist id='items_position'>
                 <option value="პოზიცია 1" />
                 <option value="პოზიცია 2" />
                 <option value="პოზიცია 3" />

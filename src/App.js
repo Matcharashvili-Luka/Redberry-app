@@ -4,17 +4,24 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Main_Page from './Components/Main_Page/Main_Page';
 import New_element_Page from './Components/New_Element_Page/New_element_Page';
 import Elements from './Components/Elements/Elements';
+import Single_element_detailed_info from './Components/Elements/Single_element_detailed_info';
 
 function App() {
+  // store element id by clicking the element itself (for single element page);
+  const[elementId, setElementId] = useState(0);
+
+  // store value of search input;
+  const[searchInp, setSearchInp] = useState('');
+
   // to change pages between person and lap info, when creating new element;
   const[page, setPage] = useState(0);
 
   // create and store data (if there is smth in l.storage return it. else data = [])
-  const[data, setData] = useState(JSON.parse(localStorage.getItem('Laptop_data')) || []);
+  const[data, setData] = useState(JSON.parse(localStorage.getItem('laptop_data')) || []);
 
   // update local storage data. once we add new element to data.
   useEffect(() => {
-    localStorage.setItem('Laptop_data', JSON.stringify(data));
+    localStorage.setItem('laptop_data', JSON.stringify(data));
   }, [data]);
 
   // create single element object
@@ -26,7 +33,6 @@ function App() {
     position: '',
     email: '',
     mobNum: '',
-    img: '',
     laptopName: '',
     laptopBrand: '',
     CPU: '',
@@ -152,9 +158,6 @@ function App() {
     }else if(obj.price === ''){
       alert_message='მიუთითეთ ლეპტოპის ფასი!';
       return false;
-    }else if(obj.img === ''){
-      alert_message='ატვირთეთ ლეპტოპის ფოტო!';
-      return false;
     }else if(obj.condition === ''){
       alert_message='მიუთითეთ ლეპტოპის მდგომარეობა!';
       return false;
@@ -173,10 +176,9 @@ function App() {
 
   const onSubmit = (el) => {
     if(ifValidObj(el) === true){
-      formData.id = formData.mobNum; // არამგონია კარგი ვარიანტი იყოს id-ისთვის, მაგრამ არცისმგონია რამდენიმეს ქონდეს ერთი ნომერი :)).
+      formData.id = data.length + 1; // არამგონია კარგი ვარიანტი იყოს id-ისთვის, მაგრამ არცისმგონია რამდენიმეს ქონდეს ერთი ნომერი :)).
       alert('ინფორმაცია შენახულია');
       Submit(el);
-      console.log(data);
       setFormData({
         ...formData,
         id: '', 
@@ -186,7 +188,6 @@ function App() {
         position: '',
         email: '',
         mobNum: '',
-        img: '',
         laptopName: '',
         laptopBrand: '',
         CPU: '',
@@ -204,6 +205,10 @@ function App() {
     }
   }
 
+  // to delete element from local storage;
+  const deleteElement = (id) => {
+    setData(data.filter((el) => el.id !== id));
+  }
 
   //==========================================================
   //==========M--E--T--H--O--D--S____E--N--D==================
@@ -234,6 +239,21 @@ function App() {
             path='/Elements' 
             element={
               <Elements 
+                data={data}
+                elementId={elementId}
+                setElementId={setElementId}
+                setSearchInp={setSearchInp}
+                searchInp={searchInp}
+              />
+            }
+          />
+          <Route 
+            path={`/Elements/el-${elementId}`} 
+            element={
+              <Single_element_detailed_info 
+                id={elementId}
+                data={data}
+                deleteElement={deleteElement}
               />
             }
           />

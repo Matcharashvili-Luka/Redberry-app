@@ -7,15 +7,12 @@
     margin-top: 20px;
 }
 
-.laptop_img #file{
-    font-size: 16px;
-    background: #fff;
+.laptop_img p{
+    text-align: center;
+    width: 170px;
+    font-size: 20px;
+    font-weight: 900;
     border-radius: 50px;
-    width: 300px;
-    outline: 1px solid black;
-}
-::-webkit-file-upload-button{
-    font-size: 18px;
     padding: 15px;
     color: black;
     background-color: #f5af09;

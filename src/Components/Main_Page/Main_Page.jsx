@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import IMG from './Redberry.jpg';
-import '../../Style/Elements_Style/Main_page.css'
+import '../../Style/Main_page.css'
 
 function Main_Page() {
   return (

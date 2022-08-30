@@ -1,0 +1,25 @@
+.elements_container .search{
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    top: -1px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elements_container .data_container{
+    height: 100%;
+    margin-top: 310px;
+    width: 70vw;
+    height: auto;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    margin-bottom: 50px;
+}
+
+

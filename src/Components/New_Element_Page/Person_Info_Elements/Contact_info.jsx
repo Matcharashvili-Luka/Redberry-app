@@ -29,7 +29,7 @@ function Contact_info({ formData, setFormData, emailValidation, mobileNumbervali
             <input 
                 className={number.length === 0 ? 'normal_num' : mobileNumbervalidation(number) ? 'valid_num' : 'invalid_num'}
                 type="text"
-                placeholder='+995 598 00 07 01'
+                placeholder='+995 555 00 00 00'
                 value={formData.mobNum} 
                 onChange={
                     (e) => {

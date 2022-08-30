@@ -1,0 +1,98 @@
+.detailed_info_container{
+    outline: 1.5px solid rgb(42, 42, 162);
+    padding: 0rem 2rem;
+    width: 900px;
+    height: 550px;
+    position: relative;
+    border-radius: .5rem;
+}
+
+/* main info style */
+
+.main_info_detailed{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 1rem 1rem 1rem;
+    border-bottom: 1px solid grey;
+}
+
+.main_info_detailed .right_subSection{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main_info_detailed .right_subSection .keys{
+    margin-right: 50px;
+}
+
+.main_info_detailed .right_subSection .keys p,
+.main_info_detailed .right_subSection .values p{
+    margin-right: 5px;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+/* laptop info style */
+
+.laptop_info_detailed{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 5rem 1rem 5rem;
+    border-bottom: 1px solid grey;
+}
+
+.laptop_info_detailed .left_subSection,
+.laptop_info_detailed .right_subSection{
+    display: flex;
+    justify-content: space-between;
+}
+
+.laptop_info_detailed .left_subSection .keys{
+    margin-right: 60px;
+}
+
+.laptop_info_detailed .right_subSection .keys{
+    margin-right: 70px;
+}
+
+.laptop_info_detailed .left_subSection .keys p,
+.laptop_info_detailed .left_subSection .values p,
+.laptop_info_detailed .right_subSection .keys p,
+.laptop_info_detailed .right_subSection .values p{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+/* other info style */
+
+.other_info_detailed{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 5rem 1rem 5rem;
+    border-bottom: 1px solid grey;
+}
+
+.other_info_detailed .left_subSection,
+.other_info_detailed .right_subSection{
+    display: flex;
+    justify-content: space-between;
+}
+
+.other_info_detailed .left_subSection .keys{
+    margin-right: 10px;
+}
+
+.other_info_detailed .right_subSection .keys{
+    margin-right: 40px;
+}
+
+.other_info_detailed .left_subSection .keys p,
+.other_info_detailed .left_subSection .values p,
+.other_info_detailed .right_subSection .keys p,
+.other_info_detailed .right_subSection .values p{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
