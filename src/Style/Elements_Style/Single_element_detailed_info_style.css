@@ -154,6 +154,10 @@
     background-color: rgb(206, 3, 3, .8);
 }
 
+.right_subSection_active{
+    display: none;
+}
+
 @media screen and (max-width: 1050px){
     .detailed_info_container{
         padding: 0rem 0rem;
@@ -221,11 +225,29 @@
     .main_info_detailed{
         width: 100%;
         flex-direction: column;
+        justify-content: space-between;
         align-items: center;
+    }
+    .main_info_detailed .right_subSection{
+        display: none;
+    }
+    .right_subSection_active{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .right_subSection_active p{
+        font-size: 16px;
+        margin: 5px;
+    }
+    .right_subSection_active .key{
+        font-size: 20px;
+        margin: 5px;
     }
     .main_info_detailed .left_subSection{
         width: 60%;
         margin-bottom: 30px;
+        margin-left: 0px;
     }
     .main_info_detailed .left_subSection p{
         align-items: center;

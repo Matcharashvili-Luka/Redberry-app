@@ -28,6 +28,18 @@ function Single_element_detailed_info({ id, data, deleteElement }) {
                     <p>+995 {element.mobNum.slice(0, 3)} {element.mobNum.slice(3, 5)} {element.mobNum.slice(5, 7)} {element.mobNum.slice(7, 9)}</p>
                 </div>
             </div>
+            <div className="right_subSection_active">
+                    <p className='key'>სახელი:</p>
+                    <p>{element.name} {element.lastName}</p>
+                    <p className='key'>თიმი:</p>
+                    <p>{element.team}</p>
+                    <p className='key'>პოზიცია:</p>
+                    <p>{element.position}</p>
+                    <p className='key'>მეილი:</p>
+                    <p>{element.email}</p>
+                    <p className='key'>ტელ.ნომერი:</p>
+                    <p>+995 {element.mobNum.slice(0, 3)} {element.mobNum.slice(3, 5)} {element.mobNum.slice(5, 7)} {element.mobNum.slice(7, 9)}</p>
+            </div>
         </div>
         <div className="laptop_info_detailed">
             <div className="left_subSection">
