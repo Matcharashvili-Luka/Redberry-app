@@ -20,4 +20,8 @@
         height: 132px;
         border-bottom: 3px dashed rgb(223, 179, 5);
     }
+    .person_info_dropDowns div input{
+        font-size: 16px;
+    }
+    
 }

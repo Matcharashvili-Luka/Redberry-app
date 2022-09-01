@@ -94,4 +94,16 @@
     .laptop_spect_lower_section div{
         margin: 0px 25px;
     }
+    .laptop_spect_upper_section div input{
+        font-size: 16px;
+    }
+    .laptop_spect_lower_section .ram_select input{
+        font-size: 16px;
+    }
+    .laptop_spect_upper_section div p,
+    .laptop_spect_lower_section .ram_select p,
+    .laptop_spect_lower_section .storage_slect .ssd_storage label,
+    .laptop_spect_lower_section .storage_slect .hdd_storage label{
+        font-size: 18px;
+    }
 }

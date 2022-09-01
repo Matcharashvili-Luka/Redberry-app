@@ -47,4 +47,21 @@
         padding-bottom: 2rem;
         border-bottom: 3px dashed rgb(223, 179, 5);
     }
+    .person_info_top{
+        display: flex;
+        margin: 20px 0px;
+        justify-content: space-around;
+    }
+    
+    .person_info_top div .header{
+        font-size: 18px;
+    }
+    
+    .person_info_top div .info{
+        font-size: 14px;
+    }
+    
+    .person_info_top div input{
+        font-size: 16px;
+    }
 }

@@ -53,5 +53,13 @@
         margin-left: 240px;
         padding-bottom: 30px;
     }
-    
+    .other_laptop_info .purchase div p{
+        font-size: 18px;
+    }
+    .other_laptop_info .purchase div input{
+        font-size: 16px;
+    }
+    .other_laptop_info .condition div label{
+        font-size: 18px;
+    }
 }

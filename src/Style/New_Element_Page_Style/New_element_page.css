@@ -101,9 +101,9 @@
 
 @media screen and (max-width: 650px){
     .new_element_page_contaier{
-        width: 400px;
-        height: 500px;
-        margin-left: calc(50% - 226px);
+        width: 330px;
+        height: 700px;
+        margin-left: calc(50% - 185px);
     }
     .new_element_page_buttons{
         padding: 20px 0px;
@@ -116,21 +116,15 @@
     .new_element_page_header{
         flex-direction: column;
         text-align: center;
-        margin-top: -50px;
+        margin-top: -30px;
     }
     .new_element_page_header p{
         margin: 5px 0px;
+        font-size: 18px;
     }
     .new_element_page_buttons button{
         height: 35px;
         font-size: 23px;
         padding: .3rem 1rem;
-    }
-}
-
-@media screen and (max-width: 450px){
-    .new_element_page_contaier{
-        width: 300px;
-        margin-left: calc(50% - 150px);
     }
 }

@@ -63,6 +63,21 @@
 
 @media screen and (max-width: 650px){
     .elements_container .data_container{
+        background-color: red;
+        height: 730px;
+        margin-bottom: 20px;
+    }
+    .elements_container .search{
+        margin-top: 30px;
+        margin-bottom: -10px;
+        background-color: #fff;
+        width: 70vw;
+        margin-left: 20px;
+    }
+    .elements_container .search input{
+        width: 220px;
+    }
+    .elements_container .data_container{
         grid-template-columns: 1fr;
     }
 }
