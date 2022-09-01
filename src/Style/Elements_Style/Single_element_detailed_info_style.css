@@ -209,7 +209,7 @@
 @media screen and (max-width: 700px){
     .detailed_info_container{
         width: 330px;
-        height: 800px;
+        height: 700px;
         position: absolute;
         top: 50%;
         left: 50%;
