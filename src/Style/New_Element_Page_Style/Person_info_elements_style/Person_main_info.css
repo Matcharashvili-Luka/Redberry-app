@@ -1,6 +1,5 @@
 .person_info_top{
     display: flex;
-    flex: 1;
     margin: 20px 0px;
     justify-content: space-around;
 }
@@ -39,4 +38,13 @@
 .person_info_top div .invalid_lastName{
     border-bottom: 1px solid red;
     color: red;
+}
+
+@media screen and (max-width: 650px){
+    .person_info_top{
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 2rem;
+        border-bottom: 3px dashed rgb(223, 179, 5);
+    }
 }

@@ -5,6 +5,7 @@ import Main_Page from './Components/Main_Page/Main_Page';
 import New_element_Page from './Components/New_Element_Page/New_element_Page';
 import Elements from './Components/Elements/Elements';
 import Single_element_detailed_info from './Components/Elements/Single_element_detailed_info';
+import { v4 as uuidv4 } from 'uuid';
 
 function App() {
   // store element id by clicking the element itself (for single element page);
@@ -94,9 +95,10 @@ function App() {
       number = number + '';
       number = number.replaceAll(/ /g, '');
       number = number.replace('+995', '');
-      for(let i of number){
-          if(!map[i]) return false;
+      for(let i of number){  
+        if(!map[i]) return false;
       }
+      if(number[0] !== '5') return false;
       return number.length === 9;
   }
 
@@ -176,7 +178,7 @@ function App() {
 
   const onSubmit = (el) => {
     if(ifValidObj(el) === true){
-      formData.id = data.length + 1; // არამგონია კარგი ვარიანტი იყოს id-ისთვის, მაგრამ არცისმგონია რამდენიმეს ქონდეს ერთი ნომერი :)).
+      formData.id = uuidv4(); // ამზე კარგი ვარიანტი დონთ ნოუ :)))
       alert('ინფორმაცია შენახულია');
       Submit(el);
       setFormData({
@@ -244,6 +246,8 @@ function App() {
                 setElementId={setElementId}
                 setSearchInp={setSearchInp}
                 searchInp={searchInp}
+                deleteElement={deleteElement}
+                id={elementId}
               />
             }
           />

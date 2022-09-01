@@ -6,10 +6,12 @@ function Laptop_specs_info({ formData, setFormData }) {
     <div className="laptop_specs">
         <div className="laptop_spect_upper_section">
           <div className="cpu_slect">
+            <p>CPU</p>
             <input 
                 list='cpu' 
                 placeholder='CPU' 
                 value={formData.CPU} 
+                onClick={() => setFormData({...formData, CPU: ''})}
                 onChange={
                   (e) => {
                     setFormData({...formData, CPU: e.target.value});

@@ -36,7 +36,7 @@ function Laptop_other_info({ formData, setFormData }) {
           <div className="new">
             <input 
               type="radio" 
-              value='new' 
+              value='ახალი' 
               name='condition' 
               id='new_lap'
               onChange={
@@ -50,7 +50,7 @@ function Laptop_other_info({ formData, setFormData }) {
           <div className="second_hand">
             <input 
               type="radio" 
-              value='new' 
+              value='მეორადი' 
               name='condition' 
               id='sec_hand'
               onChange={

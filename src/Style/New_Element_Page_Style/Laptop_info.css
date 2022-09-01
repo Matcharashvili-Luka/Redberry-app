@@ -1,3 +1,11 @@
 .laptop_info_container{
     padding: 0rem 6.5rem;
 }
+
+@media screen and (max-width: 950px){
+    .laptop_info_container{
+        padding: 0rem 0rem;
+        width: 600px;
+        margin-left: calc(50% - 300px);
+    }
+}

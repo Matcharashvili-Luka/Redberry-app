@@ -14,3 +14,10 @@
     border-bottom: 1px solid rgb(206, 205, 205);
     padding: .2rem .5rem;
 }
+
+@media screen and (max-width: 650px){
+    .person_info_dropDowns{
+        height: 132px;
+        border-bottom: 3px dashed rgb(223, 179, 5);
+    }
+}

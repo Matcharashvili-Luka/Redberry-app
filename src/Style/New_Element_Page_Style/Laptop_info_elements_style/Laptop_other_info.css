@@ -38,3 +38,20 @@
     font-size: 20px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 650px){
+    .other_laptop_info{
+        display: flex;
+        flex-direction: column;
+    }
+    .other_laptop_info .purchase{
+        flex-direction: column;
+        margin-left: 170px;
+    }
+    .other_laptop_info .condition{
+        flex-direction: column;
+        margin-left: 240px;
+        padding-bottom: 30px;
+    }
+    
+}

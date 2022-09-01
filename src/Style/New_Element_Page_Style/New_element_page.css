@@ -90,3 +90,47 @@
 .new_element_page_buttons .desabled_next_btn:hover{
     background-color: rgb(9, 149, 4);
 }
+
+@media screen and (max-width: 950px){
+    .new_element_page_contaier{
+        padding: 0rem 0rem;
+        width: 600px;
+        margin-left: calc(50% - 300px);
+    }
+}
+
+@media screen and (max-width: 650px){
+    .new_element_page_contaier{
+        width: 400px;
+        height: 500px;
+        margin-left: calc(50% - 226px);
+    }
+    .new_element_page_buttons{
+        padding: 20px 0px;
+        flex-direction: column;
+        height: 110px;
+    }
+    .new_element_page_buttons button{
+        margin-top: 10px;
+    }
+    .new_element_page_header{
+        flex-direction: column;
+        text-align: center;
+        margin-top: -50px;
+    }
+    .new_element_page_header p{
+        margin: 5px 0px;
+    }
+    .new_element_page_buttons button{
+        height: 35px;
+        font-size: 23px;
+        padding: .3rem 1rem;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .new_element_page_contaier{
+        width: 300px;
+        margin-left: calc(50% - 150px);
+    }
+}

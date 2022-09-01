@@ -42,4 +42,10 @@
     color: red;
 }
 
-
+@media screen and (max-width: 650px){
+    .contact_info{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+}

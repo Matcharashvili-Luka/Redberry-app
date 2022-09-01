@@ -17,3 +17,23 @@
     border-bottom: 1px solid rgb(206, 205, 205);
     padding: .2rem .5rem;
 }
+
+@media screen and (max-width: 950px) {
+    .laptop_brand_info div input{
+        width: 200px;
+    }
+    .laptop_brand_info{
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .laptop_brand_info{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .laptop_brand_info div input{
+        width: 270px;
+    }
+}

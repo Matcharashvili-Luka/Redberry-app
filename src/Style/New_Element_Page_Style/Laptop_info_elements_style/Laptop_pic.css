@@ -25,3 +25,15 @@
     background-color: #edc66c;
 }
 
+@media screen and (max-width: 650px) {
+    .laptop_img{
+        height: 90px;
+        margin-top: 0px;
+    }
+    .laptop_img p{
+        width: 160px;
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+

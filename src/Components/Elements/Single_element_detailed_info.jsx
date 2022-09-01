@@ -9,7 +9,8 @@ function Single_element_detailed_info({ id, data, deleteElement }) {
     <div className='detailed_info_container'>
         <div className="main_info_detailed">
             <div className="left_subSection">
-                pic here
+                <p>ეს თქვენ მასწავლეთ,</p>
+                <p>როგორც შევთანხმდით.</p>
             </div>  
             <div className="right_subSection">
                 <div className="keys">
@@ -78,10 +79,19 @@ function Single_element_detailed_info({ id, data, deleteElement }) {
         </div>
         <div className="lower_section">
             <Link to='/Elements'>
-                <p>უკან დაბრუნება</p>
+                <button 
+                    className='back_btn'
+                >
+                    უკან დაბრუნება
+                </button>
             </Link>  
             <Link to='/Elements'>     
-            <p onClick={() => {deleteElement(id); alert('ელემენტი წაშლილია!')}}>ელემენტის წაშლა</p>
+            <button 
+                onClick={() => {deleteElement(id); alert('ელემენტი წაშლილია!')}} 
+                className='del_btn'
+            >
+                ელემენტის წაშლა
+            </button>
             </Link>  
         </div>
     </div>

@@ -61,3 +61,37 @@
     margin-right: 50px;
 }
 
+@media screen and (max-width: 950px) {
+    .laptop_spect_upper_section div input{
+        width: 130px;
+    }
+    .laptop_spect_upper_section{
+        justify-content: space-around;
+    }   
+    .laptop_spect_lower_section .ram_select input{
+        width: 180px;
+    } 
+    .laptop_spect_lower_section{
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .laptop_specs{
+        text-align: center;
+        width: 100%;
+    }
+    .laptop_spect_upper_section{
+        flex-direction: column;
+        margin-right: calc(50% - 115px);
+    }
+    .laptop_spect_upper_section div input{
+        width: 230px;
+    }
+    .laptop_spect_lower_section{
+        flex-direction: column;
+    }
+    .laptop_spect_lower_section div{
+        margin: 0px 25px;
+    }
+}

@@ -1,7 +1,7 @@
 .single_element_container{
     background: linear-gradient(135deg, rgb(0, 122, 244), rgb(255, 0, 93));;
     height: 100px;
-    width: 200px;
+    width: 230px;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -25,6 +25,7 @@ function Dropdown_info({ formData, setFormData}) {
                 list='items_position' 
                 placeholder='პოზიცია' 
                 value={formData.position} 
+                onClick={() => setFormData({...formData, position: ''})}
                 onChange={(e) => setFormData({...formData, position: e.target.value})}
             />
             <datalist id='items_position'>
