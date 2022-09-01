@@ -7,6 +7,7 @@ function Dropdown_info({ formData, setFormData}) {
         <div className='person_info_team'>
             <input 
                 list='items_team' 
+                name='itemsTeam'
                 placeholder='თიმი'
                 value={formData.team} 
                 onChange={(e) => setFormData({...formData, team: e.target.value})}
@@ -22,6 +23,7 @@ function Dropdown_info({ formData, setFormData}) {
         <div className='person_info_position'>
             <input 
                 list='items_position' 
+                name='itemsPosition'
                 placeholder='პოზიცია' 
                 value={formData.position} 
                 onChange={(e) => setFormData({...formData, position: e.target.value})}
