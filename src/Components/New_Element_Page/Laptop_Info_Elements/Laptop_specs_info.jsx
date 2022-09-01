@@ -11,7 +11,6 @@ function Laptop_specs_info({ formData, setFormData }) {
                 list='cpu' 
                 placeholder='CPU' 
                 value={formData.CPU} 
-                onClick={() => setFormData({...formData, CPU: ''})}
                 onChange={
                   (e) => {
                     setFormData({...formData, CPU: e.target.value});

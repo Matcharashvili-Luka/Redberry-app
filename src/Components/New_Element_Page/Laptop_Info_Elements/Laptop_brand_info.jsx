@@ -23,7 +23,6 @@ function Laptop_brand_info({ formData, setFormData }) {
               list='items' 
               placeholder='Asus'
               value={formData.laptopBrand}
-              onClick={() => setFormData({...formData, laptopBrand: ''})}
               onChange={
                 (e) => {
                     setFormData({...formData, laptopBrand: e.target.value});
